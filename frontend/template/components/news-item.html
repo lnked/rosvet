@@ -1,0 +1,29 @@
+<article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+    @@if (typeof image !== 'undefined' && image !== '') {
+    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+        <a href="./news-item.html" itemprop="url">
+            <img src="../images/@@image" class="news-item__image__src" itemprop="image" alt="">
+        </a>
+    </figure>
+    }
+    
+    <div class="news-item__content">
+        @@if (typeof date !== 'undefined' && date !== '') {
+            <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">@@date</time>
+        }
+        
+        @@if (typeof title !== 'undefined' && title !== '') {
+        <h3 class="news-item__title">
+            <a href="./news-item.html" itemprop="url" class="news-item__title__link">
+                <span itemprop="name">@@title</span>
+            </a>
+        </h3>
+        }
+        
+        @@if (typeof description !== 'undefined' && description !== '') {
+        <div class="news-item__description" itemprop="description">
+            @@description
+        </div>
+        }
+    </div>
+</article>

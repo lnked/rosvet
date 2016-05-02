@@ -23,5 +23,21 @@
 			<meta itemprop="position" content="3" />
 		</li>
 		}
+
+		@@if (page4 !== '')
+		{
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">@@page4</span></a>
+			<meta itemprop="position" content="4" />
+		</li>
+		}
+
+		@@if (page5 !== '')
+		{
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">@@page5</span></a>
+			<meta itemprop="position" content="5" />
+		</li>
+		}
 	</ol>
 </nav>

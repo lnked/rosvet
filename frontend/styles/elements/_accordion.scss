@@ -1,9 +1,11 @@
 .accordion {
+    background-color: #fff;
+    
     &__item {
         clear: both;
         
         &:not(:last-child) {
-            margin-bottom: 1px;
+            margin-bottom: 3px;
         }
 
         &__header {
@@ -74,25 +76,35 @@
 
         &__item {
             clear: both;
-            padding-left: 11px;
-            background: url(/images/li-marker.png) no-repeat 0 4px;
             
             &:not(:last-child) {
                 margin-bottom: 10px;
+            }
+
+            .accordion__list__item {
+                .accordion__list__link {
+                    background-image: url(/images/li-m-inner.png);
+                }
             }
         }
 
         &__link {
             color: #4c4c4c;
-            font-family: Roboto;
             font-size: 1.4rem;
-            font-weight: 700;
+            font-weight: 400;
             user-select: none;
+            padding-left: 11px;
             text-decoration: none;
             transition: color $time;
+            background: url(/images/li-marker.png) no-repeat 0 4px;
 
             &:hover {
                 color: $green-color;
+            }
+
+            &.current {
+                background-image: url(/images/marker-open.png);
+                background-position: 0 6px;
             }
         }
     }

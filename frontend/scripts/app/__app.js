@@ -612,7 +612,7 @@
 				e.preventDefault();
 				var $accordion_item = $(this).closest('.j-toggle-item');
 				$(this).toggleClass('current');
-				$accordion_item.find('.j-toggle-list').toggleClass('open');
+				$accordion_item.find('.j-toggle-list').eq(0).toggleClass('open');
 			});
 		},
 
@@ -625,6 +625,7 @@
 			// this.initSelect();
 			// this.initSandwich();
 			this.initAccordion();
+			this.initMagnific();
 
 			// this.ajaxForm.init();
 		}

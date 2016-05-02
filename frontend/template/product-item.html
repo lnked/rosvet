@@ -1,0 +1,23 @@
+@@include('./components/meta.html', {
+	"title": "Main"
+})
+
+<!-- @@include('./popups/popup.html') -->
+
+<main class="layout-wrapper">
+	@@include('./components/header.html', {
+		"current": "products"
+	})
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		@@include('./components/sidebar.html')
+		
+		@@include('./content/product-item.html')
+		
+	</div>
+</main>
+
+@@include('./components/footer.html')
+
+@@include('./components/scripts.html')

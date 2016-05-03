@@ -16,15 +16,6 @@
 			});
 		},
 
-		initSlider: function()
-		{
-			this.slider.init({
-				slider 	: '#slider',
-				item 	: '.js-slider-slide',
-				timeout : 6000
-			});
-		},
-		
 		initSelectTrigger: function()
 		{
 			body.on('select.close', function(e, select){
@@ -88,11 +79,6 @@
 			$(".js-cartnumber-watcher").mask("999-999-999");
 		},
 		
-		initFastclick: function()
-		{
-			FastClick.attach(document.body);
-		},
-
 		initPopup: function()
 		{
 			$.popup.init('.js-open-popup', {
@@ -144,58 +130,6 @@
 						}
 					},
 				 	closeOnContentClick: true
-				});
-			}
-		},
-
-		initFancyBox: function()
-		{
-			if (!is_undefined($.fn.fancybox))
-			{
-				$('.fancybox').fancybox({
-					helpers: {
-						overlay: {
-						  locked: false
-						}
-					}
-				});
-
-				$('.fancybox-media').fancybox({
-					openEffect  : 'none',
-					closeEffect : 'none',
-					helpers : {
-						media : {},
-						overlay: {
-						  locked: false
-						}
-					}
-				});
-
-				$(".iframe").fancybox({
-					'transitionIn'		: 'none',
-					'transitionOut'		: 'none',
-					'autoScale'     	: false,
-					'type'				: 'iframe',
-					'width'				: 500,
-					'height'			: 500,
-					'scrolling'   		: 'no'
-				});
-				
-				$(".various").fancybox({
-					maxWidth	: 800,
-					maxHeight	: 600,
-					fitToView	: false,
-					width		: '70%',
-					height		: '70%',
-					autoSize	: false,
-					closeClick	: false,
-					openEffect	: 'none',
-					closeEffect	: 'none',
-					helpers: {
-						overlay: {
-						  locked: false
-						}
-					}
 				});
 			}
 		},
@@ -263,10 +197,10 @@
 		{
 			if ($('.js-slider').length && $('.js-slider').find('.slick-slide').length)
 			{
-				var count = 4, classname = 'slider', $slider = '', width = $(window).width(), options = {};
+				var count = 1, classname = 'slider', $slider = '', width = $(window).width(), options = {};
 
 				$('.js-slider').each(function(){
-					count = 4;
+					count = 1;
 					classname = 'slider';
 
 					options = {
@@ -275,7 +209,7 @@
 						draggable: !1,
 						speed: 300,
 						fade: !1,
-						autoplay: !1,
+						autoplay: !0,
 						autoplaySpeed: 4500,
 						pauseOnHover: !1,
 						useTransform: !1,
@@ -285,11 +219,6 @@
 					
 					$slider = $(this);
 
-					if ($slider.data('viewcount'))
-					{
-						count = parseInt($slider.data('viewcount'));
-					}
-
 					if ($slider.hasClass('js-slider-calc'))
 					{
 					 	$slider.find('.slick-slide').css({
@@ -297,11 +226,6 @@
 					 	});
 					}
 
-					if ($slider.data('classname'))
-					{
-						classname = $slider.data('classname');
-					}
-					
 					if (!$slider.hasClass('js-disable-navigation'))
 					{
 						options['prevArrow'] = '<button type="button" class="slider__navigation slider__navigation_prev slick-prev"></button>';
@@ -622,6 +546,7 @@
 
 			this.initPopup();
 			this.initMask();
+			this.slickSlider();
 			// this.initSelect();
 			// this.initSandwich();
 			this.initAccordion();

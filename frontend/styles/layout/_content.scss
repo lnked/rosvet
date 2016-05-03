@@ -1,7 +1,6 @@
 .content {
     width: 100%;
     float: left;
-    padding-left: 242px;
     
     p {
         color: #000;
@@ -35,6 +34,10 @@
         line-height: 1;
         margin-bottom: 15px;
     }
+}
+
+.sidebar + .content {
+    padding-left: 242px;
 }
 
 @media only screen and (max-width: 1280px) {}

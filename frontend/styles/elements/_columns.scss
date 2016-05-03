@@ -1,0 +1,22 @@
+.columns {
+    clear: both;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid #b7ddf1;
+    }
+    
+    &__item {
+        width: 50%;
+        float: left;
+
+        &:first-child {
+            padding-right: 25px;
+        }
+
+        &:last-child {
+            padding-left: 25px;
+        }
+    }
+}

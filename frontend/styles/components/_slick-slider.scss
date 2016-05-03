@@ -1,112 +1,61 @@
 .slider {
 	width: 100%;
-	height: 44rem;
-	overflow: hidden;
+	height: 366px;
 	font-size: 0;
-	position: relative;
 	line-height: 0;
-	background-color: #152930;
 	overflow: hidden;
+	position: relative;
+	background-color: #fff;
 	
 	&__wrapper {
 		height: 100%;
 		position: relative;
 	}
-	
-	&__overlay {
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		left: 0;
-		top: 0;
-		z-index: 100;
-	}
 
 	&__navigation {
-		width: 30px;
-		height: 61px;
+		width: 21px;
+		height: 37px;
 		display: block;
 		position: absolute;
 		top: 50%;
-		margin-top: -31px;
-		cursor: pointer;
-		background: none;
 		border: 0;
+		margin-top: -18px;
+		cursor: pointer;
 		z-index: 1000;
+		opacity: 0.5;
+		background: none;
+		background-repeat: no-repeat;
+		transition: opacity $time;
+		background-size: 21px 37px;
 		
-		&:after,
-		&:before {
-			width: 100%;
-			height: 100%;
-			content: "";
-			position: absolute;
-			left: 0;
-			top: 0;
-			display: block;
-			z-index: 1;
-			background-repeat: no-repeat;
-			background-image: url(../images/arrows.png);
-			transition: opacity $time;
-			background-size: 62px 124px;
-		}
-
-		&:after {
-			opacity: 0;
-		}
-
-		&:before {
+		&:hover {
 			opacity: 1;
-		}
-
-		&:hover:after {
-			opacity: 1;
-		}
-
-		&:hover:before {
-			opacity: 0;
 		}
 
 		&_prev {
-			left: 65px;
-
-			&:before {
-				background-position: 0 0;
-			}
-
-			&:after {
-				background-position: 0 100%;
-			}
+			left: 30px;
+			background-image: url(/images/ar-left.png);
 		}
 
 		&_next {
-			right: 65px;
-
-			&:before {
-				background-position: 100% 0;
-			}
-
-			&:after {
-				background-position: 100% 100%;
-			}
+			right: 30px;
+			background-image: url(/images/ar-right.png);
 		}
 	}
 
 	&__item {
 	    float: left;
-		height: 44rem;
-		position: relative;
+		height: 366px;
 		overflow: hidden;
+		position: relative;
 		
 		&__image {
 			width: 100%;
 			height: 100%;
-			opacity: .3;
 			position: relative;
-			z-index: 1;
-			background-color: #f00;
+			z-index: 10;
 			background-repeat: no-repeat;
 			background-position: 50% 50%;
-			background-attachment: fixed;
 			background-size: cover;
 		}
 
@@ -123,59 +72,33 @@
 
 		&__title {
 			color: #fff;
-			font-size: 6rem;
+			font-family: 'PT-Sans', 'PTSans', sans-serif;
+			font-size: 8rem;
 			font-weight: 700;
+			line-height: 1;
+			margin-left: -4px;
 			margin-bottom: 25px;
-		    letter-spacing: 0.007ex;
 		}
 
 		&__description {
-			opacity: 0.6;
-			color: #fff;
-			font-size: 2.2rem;
-			font-weight: 300;
-			line-height: 3rem;
-			margin-bottom: 3.3rem;
-			padding-right: 3rem;
-			letter-spacing: 0.003ex;
+			color: #e9eeff;
+			max-width: 450px;
+			font-size: 1.6rem;
+			font-weight: 400;
+			line-height: 1.13;
+			padding-left: 13px;
+			border-left: 2px solid #ffd500;
 		}
-		
-		&__more {
-			clear: both;
-			padding-right: 102px;
-			margin-bottom: 13px;
-
-			&__link {
-				float: right;
-				color: #92c271;
-				font-size: 1.6rem;
-				font-weight: 400;
-				line-height: 2.5rem;
-				text-decoration: underline;
-
-				&:hover {
-					text-decoration: none;
-				}
-			}
-		}
-
-		&__date {
-			color: #2197c2;
-			line-height: 4rem;
-
-			&__title {
-				font-size: 1.6rem;
-				font-weight: 400;
-				line-height: 1;
-				margin-bottom: 11px;
-			}
-
-			&__count {
-				font-size: 3rem;
-				font-weight: 100;
-				line-height: 1;
-				letter-spacing: -0.015ex;
-			}
+	
+		&__overlay {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 20;
+			background: url(/images/slider-overlay.png) 50% 50% no-repeat;
+			background-size: cover;
 		}
 	}
 }

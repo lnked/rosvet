@@ -141,9 +141,9 @@ $sandwichBackgroundActive: #fff;
 	}
 }
 
-@media only screen and (max-width: 1460px) {
-	.sandwich {
-		z-index: 10030;
-		@include opacity(1);
-	}
-}
+// @media only screen and (max-width: 1460px) {
+// 	.sandwich {
+// 		z-index: 10030;
+// 		@include opacity(1);
+// 	}
+// }

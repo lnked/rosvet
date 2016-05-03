@@ -3,21 +3,6 @@ input::placeholder {
 	text-overflow: ellipsis;
 }
 
-// /* fadeouts of placeholder in focus */
-// ::placeholder            {opacity: 1; transition: opacity 0.3s ease;}
-
-// :focus::placeholder      {opacity: 0; transition: opacity 0.3s ease;}
-
-// /* shift right placeholder in focus */
-// ::placeholder            {text-indent: 0px;   transition: text-indent 0.3s ease;}
-
-// :focus::placeholder      {text-indent: 500px; transition: text-indent 0.3s ease;}
-
-// /* shift down placeholder in focus */
-// ::placeholder            {line-height: 20px;  transition: line-height 0.5s ease;}
-
-// :focus::placeholder      {line-height: 100px; transition: line-height 0.5s ease;}
-
 input,
 textarea {
 	-webkit-appearance: textfield;
@@ -26,9 +11,8 @@ textarea {
 	cursor: auto;
 
 	&::placeholder {
-		color: $placeholderColor;
-		opacity: $placeholderOpacity;
-		transition: opacity $time ease;
+        color: #ababab;
+        opacity: 1;
 	}
 
 	&:focus::placeholder {
@@ -60,22 +44,22 @@ textarea {
 	resize: vertical;
 }
 
-@keyframes shake{
-    0% { transform: translate(10px, 0); }
-    50% { transform: translate(-10px, 0); }
-    100% { transform: translate(0, 0); }
-}
-
 .form {
 	clear: both;
 
 	&__row {
 		clear: both;
-		margin-bottom: 2rem;
+        position: relative;
+		margin-bottom: 11px;
 	}
 
+    &__column-container {
+        clear: both;
+        margin-bottom: 35px;
+    }
+
 	&__column {
-		width: 328px;
+		width: 50%;
 		float: left;
 
 		&_pl {
@@ -87,41 +71,35 @@ textarea {
 		}
 	}
 
-	&__label {
-		clear: both;
-    	position: relative;
-		margin-bottom: 33px;
-
-		&__name {
-			color: #fff;
-			font-size: 1.4rem;
-			font-weight: 400;
-			line-height: 1;
-			letter-spacing: 0.07ex;
-			margin-bottom: 9px;
-		}
-	}
+    &__require {
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        color: #ababab;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.33;
+    }
 
 	&__input,
 	&__textarea {
 	    width: 100%;
-		color: #000;
+        color: #262626;
 		font-family: $font-forms;
-		font-size: 2rem;
-		font-weight: 400;
-		border: 1px solid $border-color;
 		box-sizing: border-box;
-		
+        background-color: #fff;
+        border-radius: 9px;
+        font-size: 1.8rem;
+        font-weight: 300;
+        padding-left: 25px;
+        padding-right: 25px;
+        border: 1px solid rgba(45, 119, 188, 0.2);
+
 		&.error {
 			background: rgba(255, 0, 0, 0.1);
 			border-color: rgb(255, 0, 0);
 			border-color: rgba(255, 0, 0, 0.5);
-		
-			animation-name: shake;
-			animation-duration: 300ms;
-			animation-iteration-count: 3;
-			animation-timing-function: linear;
-		}
+        }
 		
 		&:disabled {
 			opacity: 0.4;
@@ -131,6 +109,7 @@ textarea {
 		&:focus,
 		&:focus {
 		    outline: none;
+            border-color: #2d77bc;
 		}
 
 		&::-ms-clear {
@@ -149,19 +128,13 @@ textarea {
 	}
 
 	&__input {
-		min-width: 28rem;
-		max-width: 60%;
-	    height: 5.1rem;
-
-	    &_captcha {
-	    	height: 50px;
-	    }
+	    height: 53px;
 	}
 
 	&__textarea {
-		height: 12rem;
-		max-height: 30rem;
-		padding: 1rem 1.7rem;
+		height: 181px;
+		padding-top: 10px;
+        padding-bottom: 10px;
 	    max-width: 100%;
 	    resize: vertical;
 	}
@@ -177,79 +150,9 @@ textarea {
 		text-align: center;
 	}
 
-    &__group {
-        height: 34px;
-        font-size: 0;
-        line-height: 34px;
-        overflow: hidden;
-        border-radius: 1px;
-        vertical-align: top;
-        display: inline-block;
-        border: 1px solid $border;
-
-        &__item {
-            cursor: pointer;
-            position: relative;
-            vertical-align: top;
-            display: inline-block;
-
-            &__rb {
-                width: 0;
-                height: 0;
-                visibility: hidden;
-                position: absolute;
-            }
-
-            &__style {
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                left: 0;
-                top: 0;
-                z-index: 1;
-                display: none;
-                background-color: $border;
-            }
-
-            &__rb:checked + &__style {
-                display: block;
-            }
-
-            &__text {
-                height: 34px;
-                padding: 0 10px;
-                display: block;
-                line-height: 34px;
-                font-size: 1.3rem;
-                position: relative;
-                z-index: 2;
-                color: #999;
-            }
-
-            &__rb:checked + &__style + &__text {
-                color: #000;
-            }
-        }
+    &__check {
+        clear: both;
+        text-align: center;
+        margin-bottom: 25px;
     }
-}
-
-.captcha-container {
-	clear: both;
-	
-	&__image {
-		width: 120px;
-		float: left;
-		border: 1px solid #eee;
-		box-sizing: border-box;
-		overflow: hidden;
-		
-		&__trigger {
-			display: block;
-			cursor: pointer;
-		}
-	}
-
-	&__field {
-		margin-left: 135px;
-	}
 }

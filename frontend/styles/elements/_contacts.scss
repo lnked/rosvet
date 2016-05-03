@@ -1,0 +1,18 @@
+.contacts {
+    clear: both;
+    padding: 45px 0 80px;
+
+    &__wrapper {
+        @extend %layout;
+        font-size: 0;
+    }
+
+    &__title {
+        color: #000;
+        font-size: 3rem;
+        font-weight: 300;
+        line-height: 0.8;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

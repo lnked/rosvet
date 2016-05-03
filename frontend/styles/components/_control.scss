@@ -1,7 +1,7 @@
-$radioSize: 18px;
-$checkboxSize: 18px;
-$controlColor: #d0d0d0;
-$controlActiveColor: #557DE2;
+$radioSize: 19px;
+$checkboxSize: 19px;
+$controlColor: #fff;
+$controlActiveColor: #fff;
 
 .control {
 	display: inline-block;
@@ -30,18 +30,21 @@ $controlActiveColor: #557DE2;
 	}
 
 	&__label {
-		color: #000;
-		color: #666;
+		color: #1e0f00;
 	    font-weight: 400;
 	    font-size: 1.4rem;
-		font-weight: 400;
-	    margin-left: 10px;
+		margin-left: 10px;
 	    display: inline-block;
 	    vertical-align: top;
-	    line-height: 1.8rem;
+	    line-height: 21px;
 	    
 	    &__middle {
 	    	line-height: 1;
+	    }
+
+	    a {
+			color: #3b7bbd;
+			text-decoration: underline;
 	    }
 	}
 
@@ -61,7 +64,6 @@ $controlActiveColor: #557DE2;
 		    top: 50%;
 		    content: "";
 		    display: none;
-		    border: 1px solid #fff;
 		    box-sizing: border-box;
 		}
 
@@ -75,7 +77,7 @@ $controlActiveColor: #557DE2;
 			    height: 10px;
 			    margin-left: -5px;
 			    margin-top: -5px;
-			    background-color: #fff;
+			    background-color: #ffd500;
 			    border-radius: 50%;
 			}
 		}
@@ -85,17 +87,11 @@ $controlActiveColor: #557DE2;
 			height: $checkboxSize;
 
 			&:before {
-		   		width: 10px;
-			    height: 5px;
-			    margin-left: -4px;
-			    margin-top: -4px;
-			    border-width: 0 0 1px 1px;
-			    -moz-border-bottom-colors: none;
-			    -moz-border-left-colors: none;
-			    -moz-border-right-colors: none;
-			    -moz-border-top-colors: none;
-			    border-image: none;
-			    transform: rotate(-45deg);
+		   		width: 16px;
+				height: 15px;
+				top: 1px;
+				left: 2px;
+			    background: url(/images/checked.png) 50% 50% no-repeat;
 			}
 		}
 	}

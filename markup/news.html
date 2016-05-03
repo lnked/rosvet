@@ -33,11 +33,9 @@
     <meta content="320" name="MobileOptimized">
     <meta name="author" content="">
     <meta name="copyright" content="">
-    <!--
-	<link rel="preload" href="FiraSans-Regular.woff">
-	<link rel="preload" href="FiraSans-SemiBold.woff">
-	-->
     <!-- Stylesheets -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/main.min.css">
     <script>
         (function(d)
@@ -47,108 +45,11 @@
     </script>
     <!-- Favicon -->
     <!--[if lt IE 9]>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
 
 <body>
-    <div class="overlay" id="overlay"></div>
-    <script type="text/html" id="tmpl-notification">
-        <div class="notification" id="popup_notification"> {{#title}}
-            <div class="notification__header">{{title}}</div> {{/title}} {{#text}}
-            <div class="notification__content clearfix"> {{text}} </div> {{/text}} </div>
-    </script>
-    <script type="text/html" id="tmpl-popup-message">
-        <div class="popup popup_simple popup_message" id="popup_message">
-            <b class="popup__close popup__close_simple js-popup-close"></b> {{#title}}
-            <header class="popup__header popup__header_simple"> {{title}} </header> {{/title}} {{#text}}
-            <div class="popup__message clearfix"> {{text}} </div> {{/text}} </div>
-    </script>
-    <script type="text/html" id="tmpl-popup-error">
-        <div class="popup popup_simple popup_error" id="popup_error">
-            <b class="popup__close popup__close_simple js-popup-close"></b> {{#title}}
-            <header class="popup__header popup__header_simple"> {{title}} </header> {{/title}} {{#text}}
-            <div class="popup__message clearfix"> {{text}} </div> {{/text}} </div>
-    </script>
-    <div class="popup" id="popup-test">
-        <div class="popup__wrapper">
-            <span class="popup__close js-popup-close"></span>
-            <header class="popup__header">
-                <h2>Popup</h2>
-            </header>
-            <section class="popup__conteiner clearfix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptates doloremque commodi rerum voluptatibus cumque blanditiis, facilis ratione minus eius officiis corporis dolores nobis assumenda iusto deserunt maxime eligendi!
-                    Enim.</p>
-                <p>Omnis porro, sed recusandae illum adipisci quidem saepe tempore repudiandae exercitationem delectus, laborum soluta eaque modi corporis. Ad ullam et iure, non nam, eveniet sed, distinctio porro officia aliquam at.</p>
-            </section>
-            <footer class="popup__footer popup__footer_right">
-                <a href="" class="button js-popup-close">Применить</a>
-            </footer>
-        </div>
-    </div>
-    <div class="popup" id="popup-feedback">
-        <div class="popup__dialog js-popup-dialog">
-            <div class="popup__content">
-                <span class="popup__close js-popup-close"></span>
-                <header class="popup__header"> Спасибо за регистрацию! </header>
-                <section class="popup__conteiner clearfix">
-                    <h3 class="popup__title">В ближайшее время вы получите письмо на указанный в анкете электронный адрес со ссылкой, по которой нужно будет перейти. Если вы не получили письмо, проверьте, пожалйста, электронный адрес, указанный вами в анкете,
-                        <br>и повторите отправку. (Умоляю, верните этому тексту человеческий вид. Ваш русский язык)</h3>
-                    <div class="form__row clearfix form__row_last">
-                        <div class="popup__strong">donnarosedalvadores@gmail.com</div>
-                    </div>
-                </section>
-                <footer class="popup__footer clearfix">
-                    <a href="" class="button button_dark button_fix">отправить еще раз</a>
-                </footer>
-            </div>
-        </div>
-    </div>
-    <script type="text/html" id="tmpl-popup-demo">
-        <div class="popup" id="popup-demo">
-            <div class="popup__dialog">
-                <section class="popup__content">
-                    <b class="popup__close js-popup-close">Закрыть</b>
-                </section>
-            </div>
-        </div>
-    </script>
-    <script type="text/html" id="tmpl-popup-service">
-        <div class="popup" id="popup-service">
-            <div class="popup__dialog">
-                <section class="popup__content">
-                    <b class="popup__close js-popup-close">Закрыть</b>
-                    <header class="popup__header">
-                        <h4 class="popup__header__title">Заказать услуги</h4>
-                    </header>
-                    <article class="popup__body"> </article>
-                </section>
-            </div>
-        </div>
-    </script>
-    <script type="text/html" id="tmpl-popup-feedback">
-        <div class="popup" id="popup-feedback">
-            <div class="popup__dialog">
-                <section class="popup__content">
-                    <b class="popup__close js-popup-close">Закрыть</b>
-                    <header class="popup__header">
-                        <h4 class="popup__header__title">Заказать услуги</h4>
-                    </header>
-                    <article class="popup__body"> </article>
-                </section>
-            </div>
-        </div>
-    </script>
-    <script type="text/html" id="tmpl-mustache">
-        <h1>{{header}}</h1>
-        <p>{{content}}</p>
-        <ul> {{#authors}}
-            <li>{{#accent}} {{.}} {{/accent}}</li> {{/authors}} {{^authors}}
-            <li>anonymous</li> {{/authors}} </ul> {{#stooges}}
-        <b>{{name}}</b> {{/stooges}} * {{name}} * {{age}} * {{company}} * {{{company}}} * {{&company}} {{=
-        <% %>=}} * {{company}}
-            <%={{ }}=%>
-    </script>
     <main class="layout-wrapper">
         <span class="sandwich js-sandwich-menu">
             <span class="sandwich__layer">Menu</span>
@@ -201,86 +102,108 @@
                 </div>
             </div>
         </nav>
-        <div class="layout-wrapper__inner" itemprop="mainContentOfPage">
-            <br>
-            <br>
-            <br>
-            <br>
-            <section class="clearfix">
-                <article class="grid_1">1</article>
-                <article class="grid_2">2</article>
-                <article class="grid_3">3</article>
-                <article class="grid_4">4</article>
-                <article class="grid_5">5</article>
-                <article class="grid_6">6</article>
-                <article class="grid_7">7</article>
-                <article class="grid_8">8</article>
-                <article class="grid_9">9</article>
-                <article class="grid_10">10</article>
-                <article class="grid_11">11</article>
-                <article class="grid_12">12</article>
-            </section>
-            <br>
-            <br>
-            <br>
-            <br>
-            <section>
-                <article></article>
-                <article></article>
-            </section>
-            <label class="control control_checkbox clearfix" role="checkbox">
-                <input type="checkbox" class="control__input" name="checkbox" value="1">
-                <span class="control__visible control__visible_checkbox"></span>
-                <span class="control__label">
-                    <span class="control__label__middle">checkbox</span>
-                </span>
-            </label>
-            <br>
-            <label class="control control_radio clearfix" role="radio">
-                <input type="radio" class="control__input" name="radio" value="1">
-                <span class="control__visible control__visible_radio"></span>
-                <span class="control__label">
-                    <span class="control__label__middle">radio 1</span>
-                </span>
-            </label>
-            <br>
-            <label class="control control_radio clearfix" role="radio">
-                <input type="radio" class="control__input" name="radio" value="2">
-                <span class="control__visible control__visible_radio"></span>
-                <span class="control__label">
-                    <span class="control__label__middle">radio 2</span>
-                </span>
-            </label>
-            <br>
-            <br>
-            <select name="">
-                <option value="">1</option>
-                <option value="">2</option>
-                <option value="">3</option>
-                <option value="">4</option>
-                <option value="">5</option>
-            </select>
-            <br>
-            <div style="padding: 30px 0;">
-                <a href="#popup-test" class="button js-open-popup" data-popup="popup-test">Открыть попап</a>
-            </div>
-            <br>
-            <ul class="tabs">
-                <li class="tabs__item">
-                    <a href="" data-toggle="tab" data-target="#tab1" aria-expanded="false">Pages</a>
-                </li>
-                <li class="tabs__item">
-                    <a href="" data-toggle="tab" data-target="#tab2" aria-expanded="false">Components</a>
-                </li>
-                <li class="tabs__item">
-                    <a href="" data-toggle="tab" data-target="#tab3" aria-expanded="true">UI Kits</a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab1"> Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. </div>
-                <div role="tabpanel" class="tab-pane animated fadeIn" id="tab2"> Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid.
-                    Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui. </div>
-                <div role="tabpanel" class="tab-pane animated fadeIn active" id="tab3"> Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher. </div>
+        <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+            <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="./gallery.html" class="menu__item__link">
+                            <span class="menu__item__link__title">Галерея</span>
+                        </a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="./news.html" class="menu__item__link current">
+                            <span class="menu__item__link__title">Новости</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="years">
+                    <li class="years__item">
+                        <a href="" class="years__item__link current">2016</a>
+                    </li>
+                    <li class="years__item">
+                        <a href="" class="years__item__link">2015</a>
+                    </li>
+                </ul>
+            </aside>
+            <div class="content">
+                <h1 class="content__title">Новости</h1>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-2.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-3.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-4.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-5.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-6.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
+                <article class="news-item clearfix" itemscope itemtype="http://schema.org/NewsArticle">
+                    <figure class="news-item__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                        <a href="./news-item.html" itemprop="url">
+                            <img src="../images/news-image-7.jpg" class="news-item__image__src" itemprop="image" alt=""> </a>
+                    </figure>
+                    <div class="news-item__content">
+                        <time class="news-item__date" datetime="2016-03-12" itemprop="datePublished">12.03.2016</time>
+                        <div class="news-item__description" itemprop="description"> К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове
+                            и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
+                    </div>
+                </article>
             </div>
         </div>
     </main>

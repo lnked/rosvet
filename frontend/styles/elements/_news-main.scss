@@ -66,3 +66,30 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .news-main {
+        &__item {
+            clear: both;
+
+            &:last-child {
+                border-bottom: 0;
+            }
+
+            &__image {
+                float: none;
+                margin-bottom: 20px;
+            }
+
+            &__content {
+                clear: both;
+                padding-top: 0;
+                padding-bottom: 0;
+            }
+
+            &__image + &__content {
+                padding-left: 0;
+            }
+        }
+    }
+}

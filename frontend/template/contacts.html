@@ -1,0 +1,18 @@
+@@include('./components/meta.html', {
+    "title": "Main"
+})
+
+<!-- @@include('./popups/popup.html') -->
+
+<main class="layout-wrapper">
+    @@include('./components/header.html', {
+        "current": "contacts"
+    })
+    
+    @@include('./content/contacts-main.html')
+    
+</main>
+
+@@include('./components/footer.html')
+
+@@include('./components/scripts.html')

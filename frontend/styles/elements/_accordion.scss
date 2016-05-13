@@ -21,31 +21,31 @@
             background-position: 15px 50%;
             
             &_chicken {
-                background-image: url(/images/icon-chicken.png);
+                background-image: url(../images/icon-chicken.png);
             }
 
             &_pig {
                 background-position-x: 8px;
-                background-image: url(/images/icon-pig.png);
+                background-image: url(../images/icon-pig.png);
             }
             
             &_cow {
                 background-position-x: 14px;
-                background-image: url(/images/icon-cow-silhouette.png);
+                background-image: url(../images/icon-cow-silhouette.png);
             }
             
             &_animal {
-                background-image: url(/images/icon-sitting-rabbit.png);
+                background-image: url(../images/icon-sitting-rabbit.png);
             }
 
             &_fish {
                 background-position-x: 10px;
-                background-image: url(/images/icon-raw-fish.png);
+                background-image: url(../images/icon-raw-fish.png);
             }
 
             &_sugar {
                 background-position-x: 15px;
-                background-image: url(/images/icon-bag-of-sugar.png);
+                background-image: url(../images/icon-bag-of-sugar.png);
             }
 
             &.current {
@@ -83,7 +83,7 @@
 
             .accordion__list__item {
                 .accordion__list__link {
-                    background-image: url(/images/li-m-inner.png);
+                    background-image: url(../images/li-m-inner.png);
                 }
             }
         }
@@ -96,14 +96,14 @@
             padding-left: 11px;
             text-decoration: none;
             transition: color $time;
-            background: url(/images/li-marker.png) no-repeat 0 4px;
+            background: url(../images/li-marker.png) no-repeat 0 4px;
 
             &:hover {
                 color: $green-color;
             }
 
             &.current {
-                background-image: url(/images/marker-open.png);
+                background-image: url(../images/marker-open.png);
                 background-position: 0 6px;
             }
         }

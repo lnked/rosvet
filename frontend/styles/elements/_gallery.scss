@@ -39,3 +39,44 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .gallery {
+        text-align: center;
+
+        &__item {
+            max-width: 33%;
+            padding: 0 10px;
+
+            &:not(:nth-child(4n+4)) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .gallery {
+        text-align: center;
+
+        &__item {
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gallery {
+        text-align: center;
+
+        &__item {
+            padding: 0;
+            max-width: 100%;
+
+            &__image {
+                margin: 0 auto;
+                max-width: 220px;
+            }
+        }
+    }
+}

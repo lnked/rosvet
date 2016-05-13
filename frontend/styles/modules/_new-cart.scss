@@ -39,7 +39,7 @@ $buttonBColor: #3B599A;
 .basket__table tbody tr td .count { width: 66px; height: 24px; display: inline-block; padding: 0; border: 1px solid #e5e5e5; text-align: center; outline: none; }
 .basket__table tbody tr td .count:focus { border-color: $buttonBColor; }
 .basket__table tbody tr td .cart-count-cover { width: 68px; height: 26px; padding: 0 28px; display: inline-block; position: relative; font-size: 0; }
-.basket__table tbody tr td .cart-count-cover .cart-count-pm { width: 28px; height: 26px; position: absolute; top: 0; display: block; background: url(/images/pm.png) no-repeat; }
+.basket__table tbody tr td .cart-count-cover .cart-count-pm { width: 28px; height: 26px; position: absolute; top: 0; display: block; background: url(../images/pm.png) no-repeat; }
 .basket__table tbody tr td .cart-count-cover .cart-count-minus { left: 0; background-position: left top; }
 .basket__table tbody tr td .cart-count-cover .cart-count-minus:hover { background-position: left -26px; }
 .basket__table tbody tr td .cart-count-cover .cart-count-minus:active { background-position: left -52px; }
@@ -120,7 +120,7 @@ a.spl:active { background: $buttonBColor; color: $baseTColor; box-shadow: inset 
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
 	.table tbody tr td .cart-count-cover .cart-count-pm {
-	    background-image: url(/images/pm@2x.png);
+	    background-image: url(../images/pm@2x.png);
 	    background-size: 56px 78px;
 	}   
 }

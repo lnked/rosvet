@@ -43,3 +43,16 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .tripple {
+        &__item {
+            max-width: 100%;
+            padding-right: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}

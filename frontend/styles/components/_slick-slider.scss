@@ -11,6 +11,10 @@
 		height: 100%;
 		position: relative;
 	}
+	
+	&__search {
+		display: none;
+	}
 
 	&__navigation {
 		width: 21px;
@@ -34,12 +38,12 @@
 
 		&_prev {
 			left: 30px;
-			background-image: url(/images/ar-left.png);
+			background-image: url(../images/ar-left.png);
 		}
 
 		&_next {
 			right: 30px;
-			background-image: url(/images/ar-right.png);
+			background-image: url(../images/ar-right.png);
 		}
 	}
 
@@ -97,7 +101,7 @@
 			left: 0;
 			top: 0;
 			z-index: 20;
-			background: url(/images/slider-overlay.png) 50% 50% no-repeat;
+			background: url(../images/slider-overlay.png) 50% 50% no-repeat;
 			background-size: cover;
 		}
 	}
@@ -134,4 +138,30 @@ ul.slick-dots li button {
 
 ul.slick-dots li.slick-active button {
 	background-color: #0099c4;
+}
+
+@media screen and (max-width: 768px) {
+	.slider {
+		&__search {
+			display: block;
+			position: absolute !important;
+			z-index: 100;
+		    top: 30px;
+		    left: 20px;
+		    right: 20px;
+		}
+
+		&__item {
+			&__content {
+				padding-top: 110px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			
+			&__title {
+				font-size: 3.6rem;
+				line-height: 0.67;
+			}
+		}
+	}
 }

@@ -20,3 +20,26 @@
         }
     }
 }
+
+@media screen and (max-width: 768px) {
+    .columns {
+        &:not(:last-child) {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border: 0;
+        }
+
+        &__item {
+            width: 100%;
+            float: none;
+            margin-bottom: 30px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #b7ddf1;
+        
+            &:not(:first-child), &:not(:last-child) {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+}

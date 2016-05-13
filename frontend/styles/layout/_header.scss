@@ -21,7 +21,7 @@
 		float: right;
 		margin-top: 10px;
 		padding-left: 34px;
-		background: url(/images/marker.png) 0 0 no-repeat;
+		background: url(../images/marker.png) 0 0 no-repeat;
 	}
 
 	&__address {
@@ -29,12 +29,23 @@
 	}
 }
 
-@media only screen and (max-width: 1280px) {}
-@media only screen and (max-width: 1140px) {}
-@media only screen and (max-width: 1024px) {}
-@media only screen and (max-width: 960px) {}
-@media only screen and (max-width: 768px) {}
-@media only screen and (max-width: 568px) {}
-@media only screen and (max-width: 480px) {}
-@media only screen and (max-width: 375px) {}
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 768px) {
+	.layout-header {
+		&__logo {
+			left: 10px;
+		}
+		
+		&__search {
+			display: none;
+		}
+	}
+}
+
+@media only screen and (max-width: 375px) {
+	.layout-header {
+		&__contacts {
+			background: none;
+			padding-left: 0;
+		}
+	}
+}

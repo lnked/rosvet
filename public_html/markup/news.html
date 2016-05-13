@@ -75,26 +75,33 @@
                 </div>
             </div>
         </header>
+        <div class="navigation__similar">
+            <div class="navigation__wrapper">
+                <div class="navigation__lang navigation__lang_similar">
+                    <a href="" class="navigation__lang__link">En</a>
+                </div>
+            </div>
+        </div>
         <nav class="navigation" role="navigation">
             <div class="navigation__wrapper">
                 <ul class="navigation__list">
                     <li class="navigation__item">
-                        <a href="./index.html" class="navigation__link">Главная</a>
+                        <a href="./markup/index.html" class="navigation__link">Главная</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./products.html" class="navigation__link">Продукция</a>
+                        <a href="./markup/products.html" class="navigation__link">Продукция</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./price-list.html" class="navigation__link">Прайс-лист</a>
+                        <a href="./markup/price-list.html" class="navigation__link">Прайс-лист</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./about.html" class="navigation__link">О нас</a>
+                        <a href="./markup/about.html" class="navigation__link">О нас</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./gallery.html" class="navigation__link">Галерея</a>
+                        <a href="./markup/gallery.html" class="navigation__link">Галерея</a>
                     </li>
                     <li class="navigation__item">
-                        <a href="./contacts.html" class="navigation__link">Контакты</a>
+                        <a href="./markup/contacts.html" class="navigation__link">Контакты</a>
                     </li>
                 </ul>
                 <div class="navigation__lang">
@@ -103,27 +110,34 @@
             </div>
         </nav>
         <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
-            <aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-                <ul class="menu">
-                    <li class="menu__item">
-                        <a href="./gallery.html" class="menu__item__link">
-                            <span class="menu__item__link__title">Галерея</span>
-                        </a>
-                    </li>
-                    <li class="menu__item">
-                        <a href="./news.html" class="menu__item__link current">
-                            <span class="menu__item__link__title">Новости</span>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="years">
-                    <li class="years__item">
-                        <a href="" class="years__item__link current">2016</a>
-                    </li>
-                    <li class="years__item">
-                        <a href="" class="years__item__link">2015</a>
-                    </li>
-                </ul>
+            <form action="" class="sidebar__search form-search">
+                <input placeholder="Поиск продукции" class="form-search__input">
+                <button type="submit" class="form-search__button"></button>
+            </form>
+            <aside class="sidebar" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+                <div class="sidebar__trigger j-sidebar-trigger"> Продукция </div>
+                <div class="sidebar__content j-sidebar-content">
+                    <ul class="menu">
+                        <li class="menu__item">
+                            <a href="./gallery.html" class="menu__item__link">
+                                <span class="menu__item__link__title">Галерея</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./news.html" class="menu__item__link current">
+                                <span class="menu__item__link__title">Новости</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="years">
+                        <li class="years__item">
+                            <a href="" class="years__item__link current">2016</a>
+                        </li>
+                        <li class="years__item">
+                            <a href="" class="years__item__link">2015</a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
             <div class="content">
                 <h1 class="content__title">Новости</h1>
@@ -204,6 +218,52 @@
                             и наросты на шее и горле, очень чувствительны к ветру и сырости. </div>
                     </div>
                 </article>
+                <nav class="pagination clearfix">
+                    <ol class="pagination__list" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item__text">в начало</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item__nav pagination__item__nav_prev" rel="prev"></a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page current">
+                                <span itemprop="name">1</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page">
+                                <span itemprop="name">2</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page">
+                                <span itemprop="name">3</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page">
+                                <span itemprop="name">4</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page">
+                                <span itemprop="name">5</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" itemprop="url" class="pagination__item__page">
+                                <span itemprop="name">6</span>
+                            </a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item__nav pagination__item__nav_next" rel="next"></a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__item__text">в конец</a>
+                        </li>
+                    </ol>
+                </nav>
             </div>
         </div>
     </main>

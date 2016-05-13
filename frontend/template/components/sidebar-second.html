@@ -1,24 +1,36 @@
-<aside class="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-    
-    <ul class="menu">
-        <li class="menu__item">
-            <a href="./gallery.html" class="menu__item__link@@if (current == 'gallery') { current}">
-                <span class="menu__item__link__title">Галерея</span>
-            </a>
-        </li>
-        <li class="menu__item">
-            <a href="./news.html" class="menu__item__link@@if (current == 'news') { current}">
-                <span class="menu__item__link__title">Новости</span>
-            </a>
-        </li>
-    </ul>
+<form action="" class="sidebar__search form-search">
+    <input placeholder="Поиск продукции" class="form-search__input">
+    <button type="submit" class="form-search__button"></button>
+</form>
 
-    @@if (current == 'news') {
-        
-        <ul class="years">
-            <li class="years__item"><a href="" class="years__item__link current">2016</a></li>
-            <li class="years__item"><a href="" class="years__item__link">2015</a></li>
+<aside class="sidebar" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+    
+    <div class="sidebar__trigger j-sidebar-trigger">
+        Продукция
+    </div>
+    
+    <div class="sidebar__content j-sidebar-content">
+        <ul class="menu">
+            <li class="menu__item">
+                <a href="./gallery.html" class="menu__item__link@@if (current == 'gallery') { current}">
+                    <span class="menu__item__link__title">Галерея</span>
+                </a>
+            </li>
+            <li class="menu__item">
+                <a href="./news.html" class="menu__item__link@@if (current == 'news') { current}">
+                    <span class="menu__item__link__title">Новости</span>
+                </a>
+            </li>
         </ul>
-        
-    }
+
+        @@if (current == 'news') {
+            
+            <ul class="years">
+                <li class="years__item"><a href="" class="years__item__link current">2016</a></li>
+                <li class="years__item"><a href="" class="years__item__link">2015</a></li>
+            </ul>
+            
+        }
+    </div>
+    
 </aside>

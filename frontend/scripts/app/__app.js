@@ -540,6 +540,32 @@
 			});
 		},
 
+		initSidebar: function()
+		{
+			var $content = $('#sidebar').find('.j-sidebar-content');
+
+			$('body').on('click', '.j-sidebar-trigger', function(){
+				if ($content.hasClass('animate'))
+				{
+					$(this).removeClass('animate');
+					$content.removeClass('animate');
+					
+					setTimeout(function(){
+						$content.removeClass('active');
+					}, 250);
+				}
+				else
+				{
+					$(this).addClass('animate');
+					$content.addClass('active');
+
+					setTimeout(function(){
+						$content.addClass('animate');
+					}, 5);
+				}
+			});
+		},
+
 		init: function()
 		{
 			this.disableHover();
@@ -547,12 +573,10 @@
 			this.initPopup();
 			this.initMask();
 			this.slickSlider();
-			// this.initSelect();
-			// this.initSandwich();
+			this.initSandwich();
 			this.initAccordion();
+			this.initSidebar();
 			this.initMagnific();
-
-			// this.ajaxForm.init();
 		}
 
 	};

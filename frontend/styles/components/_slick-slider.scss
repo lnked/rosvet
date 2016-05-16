@@ -150,6 +150,10 @@ ul.slick-dots li.slick-active button {
 		    left: 20px;
 		    right: 20px;
 		}
+		
+		&__navigation {
+			display: none !important;
+		}
 
 		&__item {
 			&__content {
@@ -159,7 +163,7 @@ ul.slick-dots li.slick-active button {
 			}
 			
 			&__title {
-				font-size: 3.6rem;
+				font-size: 2.6rem;
 				line-height: 0.67;
 			}
 		}

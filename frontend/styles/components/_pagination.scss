@@ -24,6 +24,16 @@
 			margin-right: 2px;
 		}
 		
+		&_control {
+			&_prev {
+				margin-right: 15px !important;
+			}
+			
+			&_next {
+				margin-left: 15px !important;
+			}
+		}
+
 		&__text {
 			text-decoration: none;
 			color: #333;
@@ -95,6 +105,16 @@
 				&:before {
 					opacity: 1;
 				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.pagination {
+		&__item {
+			&_control {
+				display: none;
 			}
 		}
 	}

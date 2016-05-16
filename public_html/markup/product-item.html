@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <!-- (c) lnk. celebro | http://www.celebro.ru/ -->
+
 <!--[if lt IE 7 ]> <html class="ie6" lang="ru"> <![endif]-->
 <!--[if IE 7 ]> <html class="ie7" lang="ru"> <![endif]-->
 <!--[if IE 8 ]> <html class="ie8" lang="ru"> <![endif]-->
@@ -7,575 +8,385 @@
 <!--[if gt IE 8]><!-->
 <html lang="ru" class="no-js" itemscope="itemscope" xmlns="http://www.w3.org/1999/xhtml" itemtype="http://schema.org/WebPage">
 <!--<![endif]-->
-
 <head>
-    <title itemprop="name">Main</title>
-    <meta charset="utf-8">
-    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <meta content="on" http-equiv="cleartype">
-    <!--
+	<title itemprop="name">Main</title>
+	
+	<meta charset="utf-8">
+	<meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+	<meta content="on" http-equiv="cleartype">
+	<!--
 	<meta name="viewport" content="width=960">
 	<meta name="viewport" content="width=960, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
 	-->
-    <meta content="width=device-width, initial-scale=1.0, minimal-ui" name="viewport">
-    <meta itemprop="inLanguage" content="ru">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="robots" content="index, follow">
-    <meta name="theme-color" content="#084179">
-    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
-    <meta content="telephone=no" name="format-detection">
-    <meta content="address=no" name="format-detection">
-    <meta content="True" name="HandheldFriendly">
-    <meta content="320" name="MobileOptimized">
-    <meta name="author" content="">
-    <meta name="copyright" content="">
-    <!-- Stylesheets -->
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="../css/main.min.css">
-    <script>
-        (function(d)
-        {
-            d.className = d.className.replace(/\bno-js/, '');
-        })(document.documentElement);
-    </script>
-    <!-- Favicon -->
-    <!--[if lt IE 9]>
+	<meta content="width=device-width, initial-scale=1.0, minimal-ui" name="viewport">
+
+	<meta itemprop="inLanguage" content="ru">
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index, follow">
+
+	<meta name="theme-color" content="#084179">
+	
+	<meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR">
+	<meta content="telephone=no" name="format-detection">
+	<meta content="address=no" name="format-detection">
+	<meta content="True" name="HandheldFriendly">
+	<meta content="320" name="MobileOptimized">
+
+	<meta name="author" content="">
+	<meta name="copyright" content="">
+	
+	<!-- Stylesheets -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../css/main.min.css">
+	
+	<script>(function(d) { d.className = d.className.replace(/\bno-js/, ''); })(document.documentElement);</script>
+	
+	<!-- Favicon -->
+
+	<!--[if lt IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 </head>
-
 <body>
-    <main class="layout-wrapper">
-        <span class="sandwich js-sandwich-menu">
-            <span class="sandwich__layer">Menu</span>
-        </span>
-        <div class="menu-overlay" id="menu-overlay"></div>
-        <header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-            <div class="layout-header__wrapper">
-                <a href="" class="layout-header__logo logo">Rosvet Kuban</a>
-                <form action="" class="layout-header__search form-search">
-                    <input placeholder="Поиск продукции" class="form-search__input">
-                    <button type="submit" class="form-search__button"></button>
-                </form>
-                <div class="layout-header__contacts">
-                    <div class="layout-header__address address"> г.Краснодар, ул.Яхонтовая,
-                        <br>д.2, офис 203 (
-                        <strong>2 этаж</strong>) </div>
-                    <div class="layout-header__phones phone">
-                        <div class="phone__item">
-                            <span class="phone__item__label">Тел.:</span> +7 (861) 273-14-42</div>
-                        <div class="phone__item">
-                            <span class="phone__item__label">Факс:</span> +7 (861) 273-14-43</div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="navigation__similar">
-            <div class="navigation__wrapper">
-                <div class="navigation__lang navigation__lang_similar">
-                    <a href="" class="navigation__lang__link">En</a>
-                </div>
-            </div>
-        </div>
-        <nav class="navigation" role="navigation">
-            <div class="navigation__wrapper">
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="./markup/index.html" class="navigation__link">Главная</a>
+
+
+
+<main class="layout-wrapper">
+	<span class="sandwich js-sandwich-menu">
+	<span class="sandwich__layer">Menu</span>
+</span>
+
+<div class="menu-overlay" id="menu-overlay"></div>
+
+<header class="layout-header" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
+	<div class="layout-header__wrapper">
+		
+		<a href="" class="layout-header__logo logo">Rosvet Kuban</a>
+			
+		<form action="" class="layout-header__search form-search">
+			<input placeholder="Поиск продукции" class="form-search__input">
+			<button type="submit" class="form-search__button"></button>
+		</form>
+		
+		<div class="layout-header__contacts">
+			<div class="layout-header__address address">
+				г.Краснодар, ул.Яхонтовая,<br>д.2, офис 203 (<strong>2 этаж</strong>)
+			</div>
+			
+			<div class="layout-header__phones phone">
+				<div class="phone__item"><span class="phone__item__label">Тел.:</span> +7 (861) 273-14-42</div>
+				<div class="phone__item"><span class="phone__item__label">Факс:</span> +7 (861) 273-14-43</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+<div class="navigation__similar">
+	<div class="navigation__wrapper">
+		<div class="navigation__lang navigation__lang_similar"><a href="" class="navigation__lang__link">En</a></div>
+	</div>
+</div>
+
+<nav class="navigation" role="navigation">
+	<div class="navigation__wrapper">
+		<ul class="navigation__list">
+		    <li class="navigation__item"><a href="./markup/index.html" class="navigation__link">Главная</a></li>
+		    <li class="navigation__item"><a href="./markup/products.html" class="navigation__link current">Продукция</a></li>
+		    <li class="navigation__item"><a href="./markup/price-list.html" class="navigation__link">Прайс-лист</a></li>
+		    <li class="navigation__item"><a href="./markup/about.html" class="navigation__link">О нас</a></li>
+		    <li class="navigation__item"><a href="./markup/gallery.html" class="navigation__link">Галерея</a></li>
+		    <li class="navigation__item"><a href="./markup/contacts.html" class="navigation__link">Контакты</a></li>
+		</ul>
+
+		<div class="navigation__lang"><a href="" class="navigation__lang__link">En</a></div>
+	</div>
+</nav>
+
+	<div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
+		
+		<form action="" class="sidebar__search form-search">
+    <input placeholder="Поиск продукции" class="form-search__input">
+    <button type="submit" class="form-search__button"></button>
+</form>
+
+<aside class="sidebar sidebar_normal" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+    <div class="sidebar__trigger j-sidebar-trigger">
+        Продукция
+    </div>
+    
+    <div class="sidebar__content j-sidebar-content">
+        <ul class="accordion">
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_chicken j-toggle-accordion">
+                    <span class="accordion__item__header__title">Птицеводство</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
                     </li>
-                    <li class="navigation__item">
-                        <a href="./markup/products.html" class="navigation__link current">Продукция</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./markup/price-list.html" class="navigation__link">Прайс-лист</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./markup/about.html" class="navigation__link">О нас</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./markup/gallery.html" class="navigation__link">Галерея</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="./markup/contacts.html" class="navigation__link">Контакты</a>
-                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
                 </ul>
-                <div class="navigation__lang">
-                    <a href="" class="navigation__lang__link">En</a>
-                </div>
-            </div>
-        </nav>
-        <div class="layout-wrapper__inner clearfix" itemprop="mainContentOfPage">
-            <form action="" class="sidebar__search form-search">
-                <input placeholder="Поиск продукции" class="form-search__input">
-                <button type="submit" class="form-search__button"></button>
-            </form>
-            <aside class="sidebar" id="sidebar" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-                <div class="sidebar__trigger j-sidebar-trigger"> Продукция </div>
-                <div class="sidebar__content j-sidebar-content">
-                    <ul class="accordion">
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_chicken j-toggle-accordion">
-                                <span class="accordion__item__header__title">Птицеводство</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_pig j-toggle-accordion">
-                                <span class="accordion__item__header__title">Свиноводство</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_cow j-toggle-accordion">
-                                <span class="accordion__item__header__title">Скотоводство</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_animal j-toggle-accordion">
-                                <span class="accordion__item__header__title">Животноводство</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_fish j-toggle-accordion">
-                                <span class="accordion__item__header__title">Рыбоводство</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="accordion__item j-toggle-item">
-                            <a href="" class="accordion__item__header accordion__item__header_sugar j-toggle-accordion">
-                                <span class="accordion__item__header__title">Сырье</span>
-                            </a>
-                            <ul class="accordion__list j-toggle-list j-toggle-item">
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Бройлеры</strong>
-                                    </a>
-                                    <ul class="accordion__list j-toggle-list">
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a>
-                                        </li>
-                                        <li class="accordion__list__item">
-                                            <a href="./product-item2.html" class="accordion__list__link">Ветциклин</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Куры - несушки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Индюки</strong>
-                                    </a>
-                                </li>
-                                <li class="accordion__list__item">
-                                    <a href="./product-item.html" class="accordion__list__link j-toggle-accordion">
-                                        <strong>Утки</strong>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-            <div class="content">
-                <h1 class="content__title">БР-1 Стандарт</h1>
-                <nav class="breadcrumbs clearfix">
-                    <ol class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                <span itemprop="name">Главная</span>
-                            </a>
-                            <meta itemprop="position" content="1" /> </li>
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                <span itemprop="name">Продукция</span>
-                            </a>
-                            <meta itemprop="position" content="2" /> </li>
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                <span itemprop="name">Птицеводство</span>
-                            </a>
-                            <meta itemprop="position" content="3" /> </li>
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                <span itemprop="name">Бройлеры</span>
-                            </a>
-                            <meta itemprop="position" content="4" /> </li>
-                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
-                            <a href="#" itemprop="item" class="breadcrumbs__item__link">
-                                <span itemprop="name">БР-1 Стандарт</span>
-                            </a>
-                            <meta itemprop="position" content="5" /> </li>
-                    </ol>
-                </nav>
-                <p>К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове и наросты
-                    на шее и горле, очень чувствительны к ветру и сырости.</p>
-                <p>А вот что писал об индейках М. И. Ливанов. Для этой птицы нужен «особливый присмотр: без надлежащего присмотру, сии птицы, будучи весьма нежны и хилы, когда вылупится из яиц, пропадают: для них ни холодные утренники, ни мокрота нетерпимы».</p>
-                <p>Особое внимание при выращивании птицы нужно обращать на плотность посадки, так как от нее в конечном итоге зависит микроклимат помещения.</p>
-                <p>Очень поучителен совет американских практиков: «Чтобы проверить, как птица чествует себя в птичнике, поставьте в него раскладушку и сами поспите в нем одну ночь. Если вы встанете утром с головной болью, то не тратьте даром деньги на корма
-                    и антибиотики, пока не отрегулируете вентиляцию».</p>
-                <p>Пословица «в тесноте да не в обиде» — не для пернатых.</p>
-                <p>Птице необходимо определенное «жизненное пространство», нужна площадь для кормушек, поилок и гнезд, требуется скромное место, где можно отдохнуть.</p>
-                <p>Стадо в процессе жизни изменяет микроклимат помещения: поглощает из воздуха кислород и выделяет углекислый газ. За час курица может выдохнуть около 3 литров углекислоты и 7 граммов водяных паров. Да и сам помет «выдыхает» аммиак, сероводород
-                    и углекислый газ. Вдобавок ко всему птица выделяет огромное количество тепла. За сутки 10 тысяч кур дают столько же тепла, сколько получается при сгорании 360 килограммов угля.</p>
-                <p>К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове и наросты
-                    на шее и горле, очень чувствительны к ветру и сырости.</p>
-                <p>А вот что писал об индейках М. И. Ливанов. Для этой птицы нужен «особливый присмотр: без надлежащего присмотру, сии птицы, будучи весьма нежны и хилы, когда вылупится из яиц, пропадают: для них ни холодные утренники, ни мокрота нетерпимы».</p>
-                <p>Особое внимание при выращивании птицы нужно обращать на плотность посадки, так как от нее в конечном итоге зависит микроклимат помещения.</p>
-                <p>Очень поучителен совет американских практиков: «Чтобы проверить, как птица чествует себя в птичнике, поставьте в него раскладушку и сами поспите в нем одну ночь. Если вы встанете утром с головной болью, то не тратьте даром деньги на корма
-                    и антибиотики, пока не отрегулируете вентиляцию».</p>
-                <p>Пословица «в тесноте да не в обиде» — не для пернатых.</p>
-                <p>Птице необходимо определенное «жизненное пространство», нужна площадь для кормушек, поилок и гнезд, требуется скромное место, где можно отдохнуть.</p>
-                <p>Стадо в процессе жизни изменяет микроклимат помещения: поглощает из воздуха кислород и выделяет углекислый газ. За час курица может выдохнуть около 3 литров углекислоты и 7 граммов водяных паров. Да и сам помет «выдыхает» аммиак, сероводород
-                    и углекислый газ. Вдобавок ко всему птица выделяет огромное количество тепла. За сутки 10 тысяч кур дают столько же тепла, сколько получается при сгорании 360 килограммов угля.</p>
-            </div>
-        </div>
-    </main>
-    <footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
-        <div class="layout-footer__wrapper">
-            <div class="layout-footer__copiright">Rosvet Kuban, © 2016</div>
-        </div>
-    </footer>
-    <script src="../js/vendor.min.js"></script>
-    <script src="../js/app.min.js"></script>
-    <!-- 
+            </li>
+            
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_pig j-toggle-accordion">
+                    <span class="accordion__item__header__title">Свиноводство</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
+                </ul>
+            </li>
+            
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_cow j-toggle-accordion">
+                    <span class="accordion__item__header__title">Скотоводство</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
+                </ul>
+            </li>
+            
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_animal j-toggle-accordion">
+                    <span class="accordion__item__header__title">Животноводство</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
+                </ul>
+            </li>
+            
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_fish j-toggle-accordion">
+                    <span class="accordion__item__header__title">Рыбоводство</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
+                </ul>
+            </li>
+
+            <li class="accordion__item j-toggle-item">
+                <a href="" class="accordion__item__header accordion__item__header_sugar j-toggle-accordion">
+                    <span class="accordion__item__header__title">Сырье</span>
+                </a>
+
+                <ul class="accordion__list j-toggle-list j-toggle-item">
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Бройлеры</strong></a>
+                        
+                        <ul class="accordion__list j-toggle-list">
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Стандарт</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-1 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-2 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">БР-3 Премиум</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Кормосмесь</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 1К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Премикс Конвет 2К</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Муливет wsp</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Сульфатрим</a></li>
+                            <li class="accordion__list__item"><a href="./product-item2.html" class="accordion__list__link">Ветциклин</a></li>
+                        </ul>
+
+                    </li>
+
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Куры - несушки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Индюки</strong></a></li>
+                    <li class="accordion__list__item"><a href="./product-item.html" class="accordion__list__link j-toggle-accordion"><strong>Утки</strong></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+</aside>
+		
+		<div class="content">
+
+    <h1 class="content__title">БР-1 Стандарт</h1>
+
+    <nav class="breadcrumbs clearfix">
+	<ol class="breadcrumbs__list" itemscope itemtype="http://schema.org/BreadcrumbList">
+		
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">Главная</span></a>
+			<meta itemprop="position" content="1" />
+		</li>
+		
+
+		
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">Продукция</span></a>
+			<meta itemprop="position" content="2" />
+		</li>
+		
+
+		
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">Птицеводство</span></a>
+			<meta itemprop="position" content="3" />
+		</li>
+		
+
+		
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">Бройлеры</span></a>
+			<meta itemprop="position" content="4" />
+		</li>
+		
+
+		
+		<li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+			<a href="#" itemprop="item" class="breadcrumbs__item__link"><span itemprop="name">БР-1 Стандарт</span></a>
+			<meta itemprop="position" content="5" />
+		</li>
+		
+	</ol>
+</nav>
+    
+    <p>К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове и наросты на шее и горле, очень чувствительны к ветру и сырости.</p>
+    <p>А вот что писал об индейках М. И. Ливанов. Для этой птицы нужен «особливый присмотр: без надлежащего присмотру, сии птицы, будучи весьма нежны и хилы, когда вылупится из яиц, пропадают: для них ни холодные утренники, ни мокрота нетерпимы».</p>
+    <p>Особое внимание при выращивании птицы нужно обращать на плотность посадки, так как от нее в конечном итоге зависит микроклимат помещения.</p>
+    <p>Очень поучителен совет американских практиков: «Чтобы проверить, как птица чествует себя в птичнике, поставьте в него раскладушку и сами поспите в нем одну ночь. Если вы встанете утром с головной болью, то не тратьте даром деньги на корма и антибиотики, пока не отрегулируете вентиляцию».</p>
+    <p>Пословица «в тесноте да не в обиде» — не для пернатых.</p>
+    <p>Птице необходимо определенное «жизненное пространство», нужна площадь для кормушек, поилок и гнезд, требуется скромное место, где можно отдохнуть.</p>
+    <p>Стадо в процессе жизни изменяет микроклимат помещения: поглощает из воздуха кислород и выделяет углекислый газ. За час курица может выдохнуть около 3 литров углекислоты и 7 граммов водяных паров. Да и сам помет «выдыхает» аммиак, сероводород и углекислый газ. Вдобавок ко всему птица выделяет огромное количество тепла. За сутки 10 тысяч кур дают столько же тепла, сколько получается при сгорании 360 килограммов угля.</p>
+    <p>К примеру, индейки. Рекомендуется строить помещения для этой птицы на легких песчаных почвах, выгонять на пастбище лишь тогда, когда сойдет роса. Индюшата, по мнению опытных птицеводов, прежде чем приобретут красную кожу на голове и наросты на шее и горле, очень чувствительны к ветру и сырости.</p>
+    <p>А вот что писал об индейках М. И. Ливанов. Для этой птицы нужен «особливый присмотр: без надлежащего присмотру, сии птицы, будучи весьма нежны и хилы, когда вылупится из яиц, пропадают: для них ни холодные утренники, ни мокрота нетерпимы».</p>
+    <p>Особое внимание при выращивании птицы нужно обращать на плотность посадки, так как от нее в конечном итоге зависит микроклимат помещения.</p>
+    <p>Очень поучителен совет американских практиков: «Чтобы проверить, как птица чествует себя в птичнике, поставьте в него раскладушку и сами поспите в нем одну ночь. Если вы встанете утром с головной болью, то не тратьте даром деньги на корма и антибиотики, пока не отрегулируете вентиляцию».</p>
+    <p>Пословица «в тесноте да не в обиде» — не для пернатых.</p>
+    <p>Птице необходимо определенное «жизненное пространство», нужна площадь для кормушек, поилок и гнезд, требуется скромное место, где можно отдохнуть.</p>
+    <p>Стадо в процессе жизни изменяет микроклимат помещения: поглощает из воздуха кислород и выделяет углекислый газ. За час курица может выдохнуть около 3 литров углекислоты и 7 граммов водяных паров. Да и сам помет «выдыхает» аммиак, сероводород и углекислый газ. Вдобавок ко всему птица выделяет огромное количество тепла. За сутки 10 тысяч кур дают столько же тепла, сколько получается при сгорании 360 килограммов угля.</p>
+
+</div>
+		
+	</div>
+</main>
+
+<footer class="layout-footer" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="layout-footer__wrapper">
+		
+		<div class="layout-footer__copiright">Rosvet Kuban, © 2016</div>
+		
+	</div>
+</footer>
+
+<script src="../js/vendor.min.js"></script>
+<script src="../js/app.min.js"></script>
+<!-- 
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=googleMap"></script>
 <script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
  -->
 </body>
-
 </html>

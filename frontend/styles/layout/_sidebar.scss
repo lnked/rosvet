@@ -19,15 +19,23 @@
         width: 100%;
         float: none;
         margin-right: 0;
-        margin-bottom: 20px;
-
+        margin-bottom: 30px;
+        
         &__search {
             display: block;
             height: 44px;
             margin-bottom: 25px;
         }
 
-        &__trigger {
+        &_normal {
+            margin-bottom: 30px;
+        }
+
+        &_simple {
+            margin-top: -19px;
+        }
+
+        &_simple &__trigger {
             width: 100%;
             height: 54px;
             color: #fff;
@@ -59,7 +67,7 @@
             }
         }
 
-        &__content {
+        &_simple &__content {
             width: 100%;
             display: none;
             max-width: 100%;

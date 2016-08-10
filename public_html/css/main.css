@@ -122,7 +122,6 @@ table {
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -130,7 +129,6 @@ table {
 *:before,
 *:after {
   -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -145,7 +143,6 @@ html {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -430,7 +427,6 @@ a:focus {
   transition: opacity .5s, transform .6s;
   transition: opacity .5s, transform .6s, -webkit-transform .6s;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1055,7 +1051,6 @@ textarea {
   color: #262626;
   font-family: Roboto, sans-serif;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #fff;
   -webkit-border-radius: 9px;
@@ -1193,7 +1188,6 @@ textarea {
   user-select: none;
   border: 1px solid #fff;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1204,7 +1198,6 @@ textarea {
   content: "";
   display: none;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1803,7 +1796,6 @@ ul.slick-dots li.slick-active button {
   -webkit-transition: border-color 0.3s;
   transition: border-color 0.3s;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1942,8 +1934,10 @@ ul.slick-dots li.slick-active button {
 
 .accordion__list__link {
   color: #4c4c4c;
+  display: block;
   font-size: 14px;
   font-size: 1.4rem;
+  line-height: 1.2;
   font-weight: 400;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2530,7 +2524,6 @@ ul.slick-dots li.slick-active button {
   margin-right: 5px;
   padding: 0 5px;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2693,7 +2686,6 @@ ul.slick-dots li.slick-active button {
   top: 0;
   padding: 0 8px;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2987,7 +2979,6 @@ img.mfp-img {
   display: block;
   line-height: 0;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto;
@@ -3079,10 +3070,6 @@ img.mfp-img {
 
 /* Retina */
 
-.icon {
-  display: inline-block;
-}
-
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
@@ -3140,7 +3127,6 @@ img.mfp-img {
     padding: 3px 5px;
     position: fixed;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
 

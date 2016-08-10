@@ -532,11 +532,21 @@
 
 		initAccordion: function()
 		{
+			var $accordion_item = null;
+
 			body.on('click', '.j-toggle-accordion', function(e){
 				e.preventDefault();
-				var $accordion_item = $(this).closest('.j-toggle-item');
-				$(this).toggleClass('current');
+				
+				if ($(this).hasClass('accordion__list__link')) {
+					$accordion_item = $(this).closest('.accordion__list__item');
+				}
+				else {
+					$accordion_item = $(this).closest('.j-toggle-item');	
+				}
+
 				$accordion_item.find('.j-toggle-list').eq(0).toggleClass('open');
+			
+				$(this).toggleClass('current');
 			});
 		},
 
